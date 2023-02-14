@@ -29,12 +29,6 @@ export default {
           text: "gltf模型颜色",
           path: "/modelColor"
         },
-        {
-          id: 3,
-          img: "/images/nav/3D Tiles BIM.jpg",
-          text: "BIM模型",
-          path: "/tilesBIM"
-        }
       ]
     };
   },
