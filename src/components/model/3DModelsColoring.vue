@@ -8,18 +8,9 @@
           <div class="row">
             <div class="name">模式：</div>
             <div class="value">
-              <a-select
-                v-dark
-                v-model="viewModel.colorBlendMode"
-                style="width: 120px"
-                size="small"
-                @change="changeAllParams"
-              >
-                <a-select-option
-                  v-for="(item, index) in viewModel.colorBlendModes"
-                  :value="item"
-                  :key="index"
-                >
+              <a-select v-dark v-model="viewModel.colorBlendMode" style="width: 120px" size="small"
+                @change="changeAllParams">
+                <a-select-option v-for="(item, index) in viewModel.colorBlendModes" :value="item" :key="index">
                   {{ item }}
                 </a-select-option>
               </a-select>
@@ -28,18 +19,8 @@
           <div class="row">
             <div class="name">颜色：</div>
             <div class="value">
-              <a-select
-                v-dark
-                v-model="viewModel.color"
-                style="width: 120px"
-                size="small"
-                @change="changeAllParams"
-              >
-                <a-select-option
-                  v-for="(item, index) in viewModel.colors"
-                  :value="item"
-                  :key="index"
-                >
+              <a-select v-dark v-model="viewModel.color" style="width: 120px" size="small" @change="changeAllParams">
+                <a-select-option v-for="(item, index) in viewModel.colors" :value="item" :key="index">
                   {{ item }}
                 </a-select-option>
               </a-select>
@@ -48,38 +29,18 @@
           <div class="row">
             <div class="name">透明度：</div>
             <div class="value">
-              <a-slider
-                size="small"
-                style="width: 120px;vertical-align: middle;"
-                :min="0"
-                :max="1"
-                :step="0.01"
-                v-model="viewModel.alpha"
-                @change="changeAllParams"
-              />
-              <a-input
-                size="small"
-                v-model="viewModel.alpha"
-                style="width: 40px"
-              />
+              <a-slider size="small" style="width: 120px;vertical-align: middle;" :min="0" :max="1" :step="0.01"
+                v-model="viewModel.alpha" @change="changeAllParams" />
+              <a-input size="small" v-model="viewModel.alpha" style="width: 40px" />
             </div>
           </div>
           <div class="row">
             <div class="name">混合值：</div>
             <div class="value">
-              <a-slider
-                size="small"
-                style="width: 120px;vertical-align: middle;"
-                v-model="viewModel.colorBlendAmount"
-                :disabled="!viewModel.colorBlendAmountEnabled"
-                @change="changeAllParams"
-              />
-              <a-input
-                size="small"
-                v-model="viewModel.colorBlendAmount"
-                :disabled="!viewModel.colorBlendAmountEnabled"
-                style="width: 40px"
-              />
+              <a-slider size="small" style="width: 120px;vertical-align: middle;" v-model="viewModel.colorBlendAmount"
+                :disabled="!viewModel.colorBlendAmountEnabled" @change="changeAllParams" />
+              <a-input size="small" v-model="viewModel.colorBlendAmount" :disabled="!viewModel.colorBlendAmountEnabled"
+                style="width: 40px" />
             </div>
           </div>
         </div>
@@ -90,18 +51,9 @@
           <div class="row">
             <div class="name">颜色：</div>
             <div class="value">
-              <a-select
-                v-dark
-                v-model="viewModel.silhouetteColor"
-                style="width: 120px"
-                size="small"
-                @change="changeAllParams"
-              >
-                <a-select-option
-                  v-for="(item, index) in viewModel.silhouetteColors"
-                  :value="item"
-                  :key="index"
-                >
+              <a-select v-dark v-model="viewModel.silhouetteColor" style="width: 120px" size="small"
+                @change="changeAllParams">
+                <a-select-option v-for="(item, index) in viewModel.silhouetteColors" :value="item" :key="index">
                   {{ item }}
                 </a-select-option>
               </a-select>
@@ -110,56 +62,24 @@
           <div class="row">
             <div class="name">透明度：</div>
             <div class="value">
-              <a-slider
-                size="small"
-                style="width: 120px;vertical-align: middle;"
-                :min="0"
-                :max="1"
-                :step="0.01"
-                v-model="viewModel.silhouetteAlpha"
-                @change="changeAllParams"
-              />
-              <a-input
-                size="small"
-                v-model="viewModel.silhouetteAlpha"
-                style="width: 40px"
-              />
+              <a-slider size="small" style="width: 120px;vertical-align: middle;" :min="0" :max="1" :step="0.01"
+                v-model="viewModel.silhouetteAlpha" @change="changeAllParams" />
+              <a-input size="small" v-model="viewModel.silhouetteAlpha" style="width: 40px" />
             </div>
           </div>
           <div class="row">
             <div class="name">宽度：</div>
             <div class="value">
-              <a-slider
-                size="small"
-                style="width: 120px;vertical-align: middle;"
-                :min="0"
-                :max="10"
-                :step="0.01"
-                v-model="viewModel.silhouetteSize"
-                @change="changeAllParams"
-              />
-              <a-input
-                size="small"
-                v-model="viewModel.silhouetteSize"
-                style="width: 40px"
-              />
+              <a-slider size="small" style="width: 120px;vertical-align: middle;" :min="0" :max="10" :step="0.01"
+                v-model="viewModel.silhouetteSize" @change="changeAllParams" />
+              <a-input size="small" v-model="viewModel.silhouetteSize" style="width: 40px" />
             </div>
           </div>
         </div>
       </div>
       <div class="footer">
-        <a-select
-          v-dark
-          default-value="Aircraft"
-          style="width: 130px"
-          size="small"
-          @change="handleChange"
-        >
-          <a-select-option
-            v-for="(item, index) in selectData"
-            :value="index"
-            :key="index"
-          >
+        <a-select v-dark default-value="Aircraft" style="width: 130px" size="small" @change="handleChange">
+          <a-select-option v-for="(item, index) in selectData" :value="index" :key="index">
             {{ item.name }}
           </a-select-option>
         </a-select>
@@ -184,7 +104,7 @@ export default {
         colorBlendModes: ["Highlight", "Replace", "Mix"],
         colorBlendAmount: 0.5,
         colorBlendAmountEnabled: false,
-        silhouetteColor: "Red",
+        silhouetteColor: "Red",//轮廓颜色
         silhouetteColors: ["Red", "Green", "Blue", "Yellow", "Gray"],
         silhouetteAlpha: 1.0,
         silhouetteSize: 2.0
@@ -227,6 +147,7 @@ export default {
   computed: {},
 
   mounted() {
+    Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0ZjI1YWYwNS00ODJiLTQzOTYtYTA3My0zMzI3ODFiZTdkYzAiLCJpZCI6MjAzOTgsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1NzczNDAzMjN9.s1TyB5DYncqM_xAF-ekua_P4fcZmmyeVR4hA9ec9G4Q";
     this.viewer = new Cesium.Viewer("cesiumContainer", {
       infoBox: false, //是否弹出右上角的信息框
       selectionIndicator: false, // 是否可点击地图上的数据
@@ -239,7 +160,7 @@ export default {
   },
 
   methods: {
-    modeChange() {},
+    modeChange() { },
     // 切换模型
     handleChange(index) {
       const item = this.selectData[index];
@@ -274,31 +195,31 @@ export default {
     },
     // 模型参数修改
     changeAllParams() {
+      //特殊模型mix
       if (this.viewModel.colorBlendMode === "Mix") {
-        this.colorBlendAmountEnabled = true;
+        this.viewModel.colorBlendAmountEnabled = true;
       } else {
-        this.colorBlendAmountEnabled = false;
+        this.viewModel.colorBlendAmountEnabled = false;
       }
       const model = this.entity.model;
-      // 模型的颜色混合模式
-      model.colorBlendMode =
-        Cesium.ColorBlendMode[this.viewModel.colorBlendMode.toUpperCase()];
-      // 模型颜色、透明度
+      // 1、模型的颜色混合模式
+      model.colorBlendMode = Cesium.ColorBlendMode[this.viewModel.colorBlendMode.toUpperCase()];
+
+      // 2、模型颜色、透明度
       let color = Cesium.Color[this.viewModel.color.toUpperCase()];
-      color = Cesium.Color.fromAlpha(color, parseFloat(this.viewModel.alpha));
+      color = Cesium.Color.fromAlpha(color, parseFloat(this.viewModel.alpha));//透明度
       model.color = color;
       // 模型混合模式下 的混合值
       model.colorBlendAmount = parseFloat(this.viewModel.colorBlendAmount);
-      // 轮廓颜色、透明度
-      let silhouetteColor =
-        Cesium.Color[this.viewModel.silhouetteColor.toUpperCase()];
+
+      // 3、轮廓颜色、透明度
+      let silhouetteColor = Cesium.Color[this.viewModel.silhouetteColor.toUpperCase()];
       silhouetteColor = Cesium.Color.fromAlpha(
         silhouetteColor,
         parseFloat(this.viewModel.silhouetteAlpha)
       );
       model.silhouetteColor = silhouetteColor;
-      // 轮廓大小
-      model.silhouetteSize = parseFloat(this.viewModel.silhouetteSize);
+      model.silhouetteSize = parseFloat(this.viewModel.silhouetteSize);// 轮廓大小
     }
   },
   beforeDestroy() {
@@ -321,13 +242,17 @@ export default {
   color: #fff;
   text-align: left;
   padding: 8px;
+
   .content {
     font-size: 12px;
+
     .row {
       margin: 5px 0;
+
       .name {
         width: 100px;
       }
+
       div {
         display: inline-block;
       }

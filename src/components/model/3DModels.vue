@@ -81,7 +81,7 @@ export default {
   },
 
   methods: {
-    handleChange(index) {
+    handleChange(index) {//绑定时候传值index
       const item = this.selectData[index];
       this.viewer.entities.removeAll(); // 清除全部的实体
       // 度转换为Cartesian3
@@ -114,7 +114,7 @@ export default {
   },
   beforeDestroy() {
     this.viewer.entities.removeAll(); // 清除全部的实体
-    this.viewer.destroy();
+    this.viewer.destroy();//viewer销毁
   }
 };
 </script>
