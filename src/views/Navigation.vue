@@ -29,6 +29,36 @@ export default {
           text: "gltf模型颜色",
           path: "/modelColor"
         },
+        {
+          id: 3,
+          img: "/images/nav/3D Tiles BIM.jpg",
+          text: "BIM模型",
+          path: "/tilesBIM"
+        },
+        {
+          id: 4,
+          img: "/images/nav/3D Tiles Adjust Height.jpg",
+          text: "3dtiles高度调整",
+          path: "/tilesHeight"
+        },
+        {
+          id: 5,
+          img: "/images/nav/3D Tiles Batch Table Hierarchy.jpg",
+          text: "3dtiles颜色批处理",
+          path: "/tilesBatch"
+        },
+        {
+          id: 6,
+          img: "/images/nav/3D Tiles Clipping Planes.jpg",
+          text: "3dtiles平面裁剪",
+          path: "/tilesClip"
+        },
+        {
+          id: 27,
+          img: "/images/nav/Bloom.jpg",
+          text: "泛光",
+          path: "/bloom"
+        },
       ]
     };
   },
