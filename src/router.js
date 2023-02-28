@@ -44,5 +44,10 @@ export default new Router({
       name: "3D Tiles Clipping Planes",
       component: () => import("./components/3dtiles/3DTilesClippingPlanes.vue")
     },
+    {
+      path: "/tilesPick",
+      name: "3D Tiles Feature Picking",
+      component: () => import("./components/3dtiles/3DTilesPick.vue")
+    },
   ]
 });

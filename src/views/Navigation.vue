@@ -54,6 +54,12 @@ export default {
           path: "/tilesClip"
         },
         {
+          id: 7,
+          img: "/images/nav/3D Tiles Feature Picking.jpg",
+          text: "3dtiles选中描边",
+          path: "/tilesPick"
+        },
+        {
           id: 27,
           img: "/images/nav/Bloom.jpg",
           text: "泛光",
