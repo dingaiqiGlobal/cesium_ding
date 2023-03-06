@@ -60,6 +60,12 @@ export default {
           path: "/tilesPick"
         },
         {
+          id: 8,
+          img: "/images/nav/3D Tiles Feature Styling.jpg",
+          text: "3dtiles样式修改",
+          path: "/tilesStyle"
+        },
+        {
           id: 27,
           img: "/images/nav/Bloom.jpg",
           text: "泛光",

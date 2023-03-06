@@ -49,5 +49,10 @@ export default new Router({
       name: "3D Tiles Feature Picking",
       component: () => import("./components/3dtiles/3DTilesPick.vue")
     },
+    {
+      path: "/tilesStyle",
+      name: "3D Tiles Feature Styling",
+      component: () => import("./components/3dtiles/3DTilesStyle.vue")
+    },
   ]
 });

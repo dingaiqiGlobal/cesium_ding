@@ -40,7 +40,8 @@ export default {
     // 添加3dtiles
     add3dTiles() {
       this.tileset = new Cesium.Cesium3DTileset({
-        url: "/data/3dtiles/Tileset/tileset.json"
+        url: "http://192.168.51.11:8004/b3dm/tileset.json"
+        //url: "/data/3dtiles/Tileset/tileset.json"
       });
       this.tileset.readyPromise
         .then(tileset => {
