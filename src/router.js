@@ -54,5 +54,27 @@ export default new Router({
       name: "3D Tiles Feature Styling",
       component: () => import("./components/3dtiles/3DTilesStyle.vue")
     },
+    {
+      path: "/tilesFormats",
+      name: "3D Tiles Formats",
+      component: () => import("./components/3dtiles/3DTilesFormats.vue")
+    },
+    {
+      path: "/tilesInspector",
+      name: "3D Tiles Inspector",
+      component: () => import("./components/3dtiles/3DTilesInspector.vue")
+    },
+    {
+      path: "/tilesInteractivity",
+      name: "3D Tiles Interactivity",
+      component: () => import("./components/3dtiles/3DTilesInteractivity.vue")
+    },
+
+
+    {
+      path: "/tilesTransform",
+      name: "3D Tiles Transform",
+      component: () => import("./components/3dtiles/3DTilesTransform.vue")
+    },
   ]
 });

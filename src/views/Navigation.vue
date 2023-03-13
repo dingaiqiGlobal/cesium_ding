@@ -66,10 +66,39 @@ export default {
           path: "/tilesStyle"
         },
         {
+          id: 9,
+          img: "/images/nav/3D Tiles Formats.jpg",
+          text: "3dtiles检查、操作",
+          path: "/tilesFormats"
+        },
+        {
+          id: 10,
+          img: "/images/nav/3D Tiles Inspector.jpg",
+          text: "3dtiles检查",
+          path: "/tilesInspector"
+        },
+        {
+          id: 11,
+          img: "/images/nav/3D Tiles Interactivity.jpg",
+          text: "3dtiles事件交互",
+          path: "/tilesInteractivity"
+        },
+
+
+
+
+
+        {
           id: 27,
           img: "/images/nav/Bloom.jpg",
           text: "泛光",
           path: "/bloom"
+        },
+        {
+          id: 28,
+          img: "/images/nav/Bloom.jpg",
+          text: "3dtiles矩阵变换",
+          path: "/tilesTransform"
         },
       ]
     };
